@@ -6,11 +6,12 @@ function bye(){
     console.info("bye mon!");
 }
 
+$(function (sayhello){
+    $("#helloworld").show();
+    // console.debug("Prova");
+    // alert("Hola!!");
+});
 $(function(){
-
-    $("#sayHello").click(function(){
-        // console.debug("Prova");
-        // alert("Hola!!");
-        $("#helloworld").show();
-    });
+    $("#sayHello").click(sayhello());
+    
 });
