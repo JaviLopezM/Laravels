@@ -7,6 +7,7 @@ Route::get('/', function () {
 Route::get('/helloworld',
     "HolaMon@hello");
 
+//Route::get(patataController@pataController);
 Route::get('/helloworld2',"HolaMon@hello2");
 
 Route::resource('user', 'UserController');
@@ -22,7 +23,7 @@ Route::post('/prova1', function () {
 Route::get('/prova2', function () {
 
 $content = "<h1>Hello World</h1>" ;
-$status =200;
+$status = 200;
 $contentType ="aplication/pdf" ;
 return response($content , $status)
 ->header ("Content-Type" , $contentType);
